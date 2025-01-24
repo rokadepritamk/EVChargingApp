@@ -1,0 +1,39 @@
+.payment-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  .payment-summary {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .payment-summary h2 {
+    margin-bottom: 20px;
+  }
+  
+  .payment-summary p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .pay-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #45a049;
+  }
+  

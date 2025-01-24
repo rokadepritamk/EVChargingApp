@@ -1,0 +1,170 @@
+/* General Layout */
+.app-container {
+    font-family: "Arial", sans-serif;
+    background-color: #f0d0ff;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Logo with Glowing Ring */
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .glowing-ring {
+    width: 180px;
+    height: 180px;
+    border-radius: 60%;
+    background: radial-gradient(circle, #8e04a0, transparent 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+  }
+  
+  .tagline {
+    font-family: "display sans font", Ethnocentric;
+    margin-top: 1px;
+    font-size: 10px;
+    color: #390a91;
+    text-align: center;
+  }
+  
+  /* Device List */
+  .device-list {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .device-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+  
+  /* Device Card */
+  .device-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .device-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .device-image {
+    width: 50px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .device-id {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .device-location,
+  .device-type {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  /* Status Indicator */
+  .status {
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 6px 10px;
+    text-align: center;
+  }
+  
+  .status.available {
+    background-color: #e0ffe5;
+    color: #28a745;
+    border: 1px solid #28a745;
+  }
+  
+  .status.occupied {
+    background-color: #ffe5e5;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+  }
+  
+  /* Mobile-Specific Styling */
+  @media (max-width: 480px) {
+    .glowing-ring {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .logo {
+      width: 50px;
+    }
+  
+    .tagline {
+      font-size: 12px;
+    }
+  
+    .device-card {
+      padding: 8px;
+    }
+  
+    .device-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .device-image {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  }
+  .status-link.available {
+    color: green; /* or any preferred color */
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .status-link.occupied {
+    color: gray;
+    pointer-events: none; /* Ensures OCCUPIED is not clickable */
+  }
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
